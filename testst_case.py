@@ -22,3 +22,4 @@ url = ["https://www.wikipedia.org/"]
 # print(data)
 
 # docker run -d -p 4444:4444 -p 5900:5900 -v /dev/shm:/dev/shm selenium/standalone-chrome-debug
+# docker run -d -p 4444:4444 -p 7900:7900 -v /dev/shm:/dev/shm selenium/standalone-chrome-debug
