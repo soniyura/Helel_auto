@@ -5,7 +5,8 @@ from random import randint
 @pytest.fixture
 def message():
     print("initial test run")
-    return 100
+    yield 100
+    print("finalization")
 
 @pytest.fixture
 def generator_0():
