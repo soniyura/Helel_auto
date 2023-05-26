@@ -12,4 +12,4 @@ with open('data.json', 'r') as f:
 
 element  = data[2]
 
-print(type(element)
+print(type(element))
