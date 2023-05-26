@@ -1,15 +1,31 @@
-data = '''['-1',null,[[['ANDROID_BACKUP',0],['BATTERY_STATS',0],['SMART_SETUP',0],['TRON',0]],-3334737594024971225],[],{'175237375':[10000]}] '''
-
-
-
 import json
-
-data = []
-
-with open('data.json', 'r') as f:
-    data = json.load(f)
+import yaml
 
 
-element  = data[2]
+# data = {"tests": {"suite_1": [],
+#                   "suite_2": [],
+#                   "suite_3": []}}
+#
+#
+# for i in range(10):
+#     data["tests"]["suite_1"].append(("value", i))
+#
+#
+# with open("data.json", "w") as f:
+#     json.dump(data, f)
+#     #f.write(str(data))
 
-print(type(element))
+
+# with open("data.json", "r") as f:
+#     data = json.load(f)
+#
+#
+# with open("data.yaml", "w") as f:
+#     yaml.dump(data, f)
+
+
+
+with open("data.yaml", "r") as f:
+    data = yaml.safe_load(f)
+
+print(data["tests"]["suite_2"][0])

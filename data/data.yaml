@@ -1,0 +1,27 @@
+tests:
+  suite_1:
+  - - value
+    - 0
+  - - value
+    - 1
+  - - value
+    - 2
+  - - value
+    - 3
+  - - value
+    - 4
+  - - value
+    - 5
+  - - value
+    - 6
+  - - value
+    - 7
+  - - value
+    - 8
+  - - value
+    - 9
+  suite_2:
+  - test: testResult
+    time: 12.45
+    success rate: 50
+  suite_3: []
